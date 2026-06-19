@@ -47,6 +47,17 @@
       <img id="imagen3" src="aday.jpg" alt="Tercera imagen">
       <img id="imagen4" src="mision.png" alt="Cuarta imagen">
       <img id="imagen5" src="magic.png" alt="Quinta imagen">
+        
+        <div id="pregunta" style="display:none;">
+    <h2>¿Te rindes?</h2>
+    <button id="btnSi">Sí</button>
+    <button id="btnNo">No</button>
+</div>
+
+<div id="resultado" style="display:none;">
+    <h1>NOOB</h1>
+</div>
+
     </div>
 
     <script>
@@ -83,16 +94,6 @@
             imagen5.style.display = "none";
             imagen5.style.display = "block";
         });
-
-        <div id="pregunta" style="display:none;">
-    <h2>¿Te rindes?</h2>
-    <button id="btnSi">Sí</button>
-    <button id="btnNo">No</button>
-</div>
-
-<div id="resultado" style="display:none;">
-    <h1>NOOB</h1>
-</div>
 
 
         const pregunta = document.getElementById("pregunta");
