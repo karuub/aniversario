@@ -83,7 +83,46 @@
             imagen5.style.display = "none";
             imagen5.style.display = "block";
         });
+
+        <div id="pregunta" style="display:none;">
+    <h2>¿Te rindes?</h2>
+    <button id="btnSi">Sí</button>
+    <button id="btnNo">No</button>
+</div>
+
+<div id="resultado" style="display:none;">
+    <h1>NOOB</h1>
+</div>
+
+
+        const pregunta = document.getElementById("pregunta");
+const resultado = document.getElementById("resultado");
+const btnSi = document.getElementById("btnSi");
+const btnNo = document.getElementById("btnNo");
+
+imagen5.addEventListener("click", () => {
+    imagen5.style.display = "none";
+    pregunta.style.display = "block";
+});
+
+btnSi.addEventListener("click", () => {
+    pregunta.style.display = "none";
+    resultado.style.display = "block";
+});
+
+btnNo.addEventListener("click", () => {
+    pregunta.style.display = "none";
+
+    // Volver a empezar desde la primera imagen
+    imagen1.style.display = "block";
+    imagen2.style.display = "none";
+    imagen3.style.display = "none";
+    imagen4.style.display = "none";
+    imagen5.style.display = "none";
+    resultado.style.display = "none";
+});
     </script>
+    
 
 </body>
 </html>
