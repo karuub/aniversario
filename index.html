@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 80%;
+            max-height: 70vh;
+            cursor: pointer;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <button id="btnPista">Empieza con la primera pista</button>
+
+        <!-- Sustituye estas URLs por tus imágenes -->
+        <img id="imagen1" src="https://via.placeholder.com/600x400?text=Primera+Imagen" alt="Primera imagen">
+
+        <img id="imagen2" src="https://via.placeholder.com/600x400?text=Segunda+Imagen" alt="Segunda imagen">
+      <img id="imagen3" src="https://via.placeholder.com/600x400?text=Tercera+Imagen" alt="Tercera imagen">
+      <img id="imagen4" src="https://via.placeholder.com/600x400?text=Quarta+Imagen" alt="Cuarta imagen">
+      <img id="imagen5" src="https://via.placeholder.com/600x400?text=Quinta+Imagen" alt="Quinta imagen">
+    </div>
+
+    <script>
+        const btnPista = document.getElementById("btnPista");
+        const imagen1 = document.getElementById("imagen1");
+        const imagen2 = document.getElementById("imagen2");
+      const imagen3 = document.getElementById("imagen3");
+      const imagen4 = document.getElementById("imagen4");
+      const imagen5 = document.getElementById("imagen5");
+
+        btnPista.addEventListener("click", () => {
+            btnPista.style.display = "none";
+            imagen1.style.display = "block";
+        });
+
+        imagen1.addEventListener("click", () => {
+            imagen1.style.display = "none";
+            imagen2.style.display = "block";
+        });
+      
+       imagen2.addEventListener("click", () => {
+            imagen2.style.display = "none";
+            imagen3.style.display = "block";
+        });
+       imagen3.addEventListener("click", () => {
+            imagen3.style.display = "none";
+            imagen4.style.display = "block";
+        });
+       imagen4.addEventListener("click", () => {
+            imagen4.style.display = "none";
+            imagen5.style.display = "block";
+        });
+       imagen5.addEventListener("click", () => {
+            imagen5.style.display = "none";
+            imagen5.style.display = "block";
+        });
+    </script>
+
+</body>
+</html>
